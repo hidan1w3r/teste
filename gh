@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site no GitHub Pages</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao meu site!</h1>
+    <p>Este site está hospedado no GitHub Pages.</p>
+  </header>
+
+  <section id="conteudo">
+    <h2>Sobre Mim</h2>
+    <p>Eu sou um desenvolvedor e estou aprendendo a usar o GitHub Pages para hospedar sites.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Meu Nome - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
