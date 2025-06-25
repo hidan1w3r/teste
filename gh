@@ -1,26 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site no GitHub Pages</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Contos Macabros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      padding: 50px 0;
+      text-align: center;
+      color: crimson;
+      font-family: 'Creepster', cursive;
+      font-size: 60px;
+      text-shadow: 3px 3px 6px black;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .historia {
+      background: #1a1a1a;
+      border-left: 5px solid crimson;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(220, 20, 60, 0.4);
+    }
+
+    .historia h2 {
+      color: crimson;
+      margin-bottom: 10px;
+    }
+
+    .historia p {
+      line-height: 1.7;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Este site está hospedado no GitHub Pages.</p>
+    Contos Macabros
   </header>
 
-  <section id="conteudo">
-    <h2>Sobre Mim</h2>
-    <p>Eu sou um desenvolvedor e estou aprendendo a usar o GitHub Pages para hospedar sites.</p>
-  </section>
+  <div class="container">
+    <div class="historia">
+      <h2>A Noiva do Cemitério</h2>
+      <p>Reza a lenda que uma noiva foi enterrada viva por engano. Em noites de lua cheia, seu véu pode ser visto dançando entre os túmulos... procurando seu amado.</p>
+    </div>
+
+    <div class="historia">
+      <h2>O Quadro que Observa</h2>
+      <p>Um velho quadro em uma casa abandonada parece seguir quem passa com os olhos. Dizem que ele captura almas solitárias e aprisiona dentro da pintura.</p>
+    </div>
+
+    <div class="historia">
+      <h2>Vozes do Porão</h2>
+      <p>Ninguém ousa descer ao porão da casa 49 da Rua Negra. Vozes infantis chamam por ajuda, mas nunca é seguro responder...</p>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Meu Nome - Todos os direitos reservados.</p>
+    &copy; 2025 Contos Macabros - Cuidado com o que lê à noite...
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
