@@ -2,84 +2,147 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Contos Macabros</title>
+  <title>Portal Macabro</title>
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
       background-color: #0d0d0d;
       color: #f5f5f5;
-      font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 0;
+      font-family: Georgia, serif;
     }
 
     header {
-      background-color: #1c1c1c;
-      padding: 50px 0;
+      background-color: #1a1a1a;
+      padding: 30px;
       text-align: center;
-      color: crimson;
       font-family: 'Creepster', cursive;
-      font-size: 60px;
-      text-shadow: 3px 3px 6px black;
+      font-size: 50px;
+      color: crimson;
+      text-shadow: 2px 2px 5px black;
     }
 
-    .container {
+    nav {
+      background-color: #111;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: crimson;
+    }
+
+    .content {
       max-width: 1000px;
       margin: auto;
       padding: 30px;
     }
 
-    .historia {
-      background: #1a1a1a;
-      border-left: 5px solid crimson;
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(220, 20, 60, 0.4);
+    .section {
+      display: none;
     }
 
-    .historia h2 {
+    .section:target {
+      display: block;
+    }
+
+    .historia, .imagem, .video {
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-left: 5px solid crimson;
+      border-radius: 8px;
+      box-shadow: 0 0 10px crimson;
+    }
+
+    .historia h2, .imagem h2, .video h2 {
       color: crimson;
       margin-bottom: 10px;
     }
 
-    .historia p {
-      line-height: 1.7;
+    .imagem img {
+      max-width: 100%;
+      border: 3px solid crimson;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px crimson;
     }
 
     footer {
-      background-color: #1c1c1c;
-      color: #aaa;
+      background-color: #111;
       text-align: center;
       padding: 20px;
+      color: #777;
       font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <header>
-    Contos Macabros
-  </header>
 
-  <div class="container">
-    <div class="historia">
-      <h2>A Noiva do Cemitério</h2>
-      <p>Reza a lenda que uma noiva foi enterrada viva por engano. Em noites de lua cheia, seu véu pode ser visto dançando entre os túmulos... procurando seu amado.</p>
+  <header>Portal Macabro</header>
+
+  <nav>
+    <a href="#historias">Histórias</a>
+    <a href="#imagens">Imagens</a>
+    <a href="#videos">Vídeos</a>
+  </nav>
+
+  <div class="content">
+    <!-- Aba de Histórias -->
+    <div id="historias" class="section">
+      <div class="historia">
+        <h2>A Noite do Sussurro</h2>
+        <p>Às 3 da manhã, uma mulher ouve um sussurro vindo do armário. Quando abre a porta... só encontra um espelho. Mas o reflexo não é dela.</p>
+      </div>
+      <div class="historia">
+        <h2>O Poço da Floresta</h2>
+        <p>Caçadores encontraram um poço antigo em uma trilha esquecida. Disseram que ouviram uma criança chorando dentro... mas era só uma voz pedindo: “Salte primeiro”.</p>
+      </div>
     </div>
 
-    <div class="historia">
-      <h2>O Quadro que Observa</h2>
-      <p>Um velho quadro em uma casa abandonada parece seguir quem passa com os olhos. Dizem que ele captura almas solitárias e aprisiona dentro da pintura.</p>
+    <!-- Aba de Imagens -->
+    <div id="imagens" class="section">
+      <div class="imagem">
+        <h2>Foto do Espelho Quebrado</h2>
+        <img src="https://i.imgur.com/4PuwZ2P.jpg" alt="Espelho assombrado">
+      </div>
+      <div class="imagem">
+        <h2>Corredor Escuro de Hospital</h2>
+        <img src="https://i.imgur.com/LdC4GCR.jpg" alt="Corredor escuro">
+      </div>
     </div>
 
-    <div class="historia">
-      <h2>Vozes do Porão</h2>
-      <p>Ninguém ousa descer ao porão da casa 49 da Rua Negra. Vozes infantis chamam por ajuda, mas nunca é seguro responder...</p>
+    <!-- Aba de Vídeos -->
+    <div id="videos" class="section">
+      <div class="video">
+        <h2>Curta de Terror: Lights Out</h2>
+        <iframe src="https://www.youtube.com/embed/F3Vof1zGE1g" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <h2>Lenda Urbana Japonesa</h2>
+        <iframe src="https://www.youtube.com/embed/UFCmW_6cYkY" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Contos Macabros - Cuidado com o que lê à noite...
+    &copy; 2025 Portal Macabro – Visite por sua conta e risco.
   </footer>
+
 </body>
 </html>
+.
